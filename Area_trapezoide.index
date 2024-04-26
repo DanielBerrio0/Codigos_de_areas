@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float base_mayor, base_menor, altura, area;
+    printf("Bienvenido a este pequeño programa para calcular el area de un trapezoide\n");
+    printf("Por favor Ingrese los siguientes datos:\n");
+    
+    
+    printf("Longitud de la base mayor: ");
+    scanf("%f", &base_mayor);
+
+    printf("Longitud de la base menor: ");
+    scanf("%f", &base_menor);
+
+    printf("Altura del trapecio: ");
+    scanf("%f", &altura);
+
+
+    area = (base_mayor + base_menor) * altura / 2;
+
+
+    printf("De acuerdo a la formula para hayar el area de un trapezoide\n");
+    printf("El área de su trapecio es de: %.2f\n", area);
+
+    return 0;
+}
+
