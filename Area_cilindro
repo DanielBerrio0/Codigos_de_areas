@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float radio, altura, area_base, area_altura, area_final;
+    
+    printf("Bienvenido a este pequeño programa para calcular el area de un cilindro.\n")
+    printf("Por favor ingrese los siguientes datos:\n")
+
+    printf("Radio del cilindro: ");
+    scanf("%f", &radio);
+
+    printf("Altura del cilindro: ");
+    scanf("%f", &altura);
+
+    area_base = 3,141592 * radio * radio;
+    area_altura = 2 * 3,141592 * radio * altura;
+    area_final = 2 * area_base + area_altura;
+
+    printf("El área final de su cilindro es: %.2f\n", area_final);
+
+    return 0;
+}
